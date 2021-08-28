@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 `;
 

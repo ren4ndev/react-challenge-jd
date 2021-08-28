@@ -10,7 +10,9 @@ export default function Header() {
   return (
     <HeaderContainer>
       <Image src={logo} alt="" width="48px" />
-      <ButtonBase margin="0 0 4px 0">Become a Nanny Share Host</ButtonBase>
+      <ButtonBase margin="0 0 4px 0">
+        Become a Nanny Share Host
+      </ButtonBase>
     </HeaderContainer>
   );
 }

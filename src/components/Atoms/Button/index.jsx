@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Typography from '../Typography';
+import { colors } from '../../../styles/variables';
 import {
   ButtonComponent,
 } from './styles';
@@ -20,7 +22,13 @@ export default function ButtonBase({
       margin={margin}
       width={width}
     >
-      {children}
+      <Typography
+        type="button"
+        fontColor={colors.white}
+        fontWeight="500"
+      >
+        {children}
+      </Typography>
     </ButtonComponent>
   );
 }

@@ -11,3 +11,18 @@ export const HeroGrid = styled(Grid)`
   min-height: 756px;
   row-gap: 0;
 `;
+
+export const Title = styled.div`
+  align-items: center;
+  display: flex;
+  grid-column: main-start/main-end;
+  grid-row: title-start/title-end;
+  padding: 0 28px;
+`;
+
+export const Description = styled.div`
+  align-items: center;
+  display: flex;
+  grid-column: main-start/main-end;
+  grid-row: desc-start/desc-end;
+`;
