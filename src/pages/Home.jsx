@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../components/Segments/Header';
+import Hero from '../components/Segments/Hero';
 
 export default function Home() {
   return (
-    <Header />
+    <Hero />
   );
 }
