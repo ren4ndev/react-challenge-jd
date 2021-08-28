@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Roboto, sans-serif;
   }
 `;
+
+export default GlobalStyle;
