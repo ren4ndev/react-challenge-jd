@@ -7,7 +7,7 @@ export const Typo = styled.span`
   font-weight: ${({ fontWeight }) => fontWeight};
   line-height: ${({ lineMobile }) => lineMobile};
   margin: ${({ margin }) => margin || 0};
-  text-align: ${({ textAlign }) => textAlign};
+  text-align: ${({ textAlign }) => textAlign || 'inherit'};
   text-decoration-line: ${({ textDecoration }) => textDecoration};
 
   @media screen and (min-width: 1024px) {

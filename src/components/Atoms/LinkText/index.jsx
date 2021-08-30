@@ -9,10 +9,11 @@ import { colors } from '../../../styles/variables';
 export default function LinkText({
   children,
   margin,
+  marginDesk,
   fontColor,
 }) {
   return (
-    <Container margin={margin}>
+    <Container margin={margin} marginDesk={marginDesk}>
       <Typography
         type="link"
         fontColor={fontColor || colors.black}
@@ -32,10 +33,12 @@ LinkText.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
   margin: PropTypes.string,
+  marginDesk: PropTypes.string,
   fontColor: PropTypes.string,
 };
 
 LinkText.defaultProps = {
   margin: null,
+  marginDesk: null,
   fontColor: null,
 };

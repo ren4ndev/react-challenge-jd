@@ -7,13 +7,16 @@ import Image from '../../Atoms/Image';
 import hero from '../../../assets/images/hero.webp';
 import heroMob from '../../../assets/images/hero-mob.webp';
 import avatar from '../../../assets/images/avatar.png';
+import heroAppDemo from '../../../assets/images/hero-app-demo.png';
 import PlayButton from '../../Atoms/PlayButton';
 import {
   HeroContainer,
   HeroGrid,
+  HeroContent,
   Title,
   Description,
   LinkWrapper,
+  ContentImage,
   Downbar,
 } from './styles';
 import { colors } from '../../../styles/variables';
@@ -36,40 +39,46 @@ export default function Hero() {
           gradient="linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%)"
           mix="overlay"
         />
-        <Title>
-          <Typography
-            type="heading1"
-            fontColor={colors.white}
-            fontWeight="500"
-            textAlign="center"
-          >
-            {title}
-          </Typography>
-        </Title>
-        <Description>
-          <Typography
-            type="body"
-            fontColor={colors.white}
-            fontWeight="400"
-            textAlign="center"
-          >
-            {desc}
-          </Typography>
-        </Description>
-        <LinkWrapper>
-          <PlayButton />
-          <LinkText
-            margin="0 0 0 16px"
-            fontColor={colors.white}
-          >
-            {buttonText}
-          </LinkText>
-        </LinkWrapper>
+        <HeroContent>
+          <Title>
+            <Typography
+              type="heading1"
+              fontColor={colors.white}
+              fontWeight="500"
+            >
+              {title}
+            </Typography>
+          </Title>
+          <Description>
+            <Typography
+              type="body"
+              fontColor={colors.white}
+              fontWeight="400"
+            >
+              {desc}
+            </Typography>
+          </Description>
+          <LinkWrapper>
+            <PlayButton />
+            <LinkText
+              margin="0 0 0 16px"
+              fontColor={colors.white}
+            >
+              {buttonText}
+            </LinkText>
+          </LinkWrapper>
+        </HeroContent>
+
+        <ContentImage>
+          <Image src={heroAppDemo} width="100%" />
+        </ContentImage>
+
         <Downbar>
           <Image src={avatar} height="56px" width="56px" />
           <LinkText
             fontColor={colors.secondary}
-            margin="6px 0"
+            margin="0"
+            marginDesk="0 2px 0 32px"
           >
             {linkDownbar}
           </LinkText>

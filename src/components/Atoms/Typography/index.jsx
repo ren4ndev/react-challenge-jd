@@ -46,6 +46,6 @@ Typography.defaultProps = {
   fontFamily: 'Inter, sans-serif',
   fontWeight: '400',
   margin: null,
-  textAlign: 'left',
+  textAlign: null,
   textDecoration: null,
 };

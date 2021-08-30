@@ -18,7 +18,7 @@ export const ImageDesk = styled.div`
 export const ImageMob = styled.div`
   background-image: ${({ gradient }) => gradient};
   grid-column: full-start/full-end;
-  grid-row: image-start/image-end;
+  grid-row: header-start/content-end;
   height: 100%;
   position: relative;
   z-index: -1;
