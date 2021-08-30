@@ -7,6 +7,8 @@ import {
 export default function Image({
   src,
   alt,
+  border,
+  borderRadius,
   fit,
   mix,
   position,
@@ -17,6 +19,8 @@ export default function Image({
     <ImageTag
       src={src}
       alt={alt}
+      border={border}
+      borderRadius={borderRadius}
       fit={fit}
       mix={mix}
       position={position}
@@ -29,6 +33,8 @@ export default function Image({
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  border: PropTypes.string,
+  borderRadius: PropTypes.string,
   fit: PropTypes.string,
   mix: PropTypes.string,
   position: PropTypes.string,
@@ -37,6 +43,8 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
+  border: null,
+  borderRadius: null,
   fit: null,
   mix: null,
   position: null,

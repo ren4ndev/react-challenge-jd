@@ -9,14 +9,16 @@ import { colors } from '../../../styles/variables';
 export default function LinkText({
   children,
   margin,
+  fontColor,
 }) {
   return (
     <Container margin={margin}>
       <Typography
         type="link"
-        fontColor={colors.white}
+        fontColor={fontColor || colors.black}
         fontWeight="500"
         textAlign="center"
+        textDecoration="underline"
       >
         {children}
       </Typography>
@@ -30,8 +32,10 @@ LinkText.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
   margin: PropTypes.string,
+  fontColor: PropTypes.string,
 };
 
 LinkText.defaultProps = {
   margin: null,
+  fontColor: null,
 };

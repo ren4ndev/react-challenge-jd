@@ -28,6 +28,17 @@ export const fontType = {
       lineMobile: '32px',
     },
   },
+  heading5: {
+    desk: {
+      as: 'h5',
+      fontSize: '16px',
+      lineHeight: '24px',
+    },
+    mobile: {
+      fontMobile: '14px',
+      lineMobile: '20px',
+    },
+  },
   body: {
     desk: {
       as: 'p',
@@ -52,7 +63,7 @@ export const fontType = {
   },
   link: {
     desk: {
-      as: 'span',
+      as: 'p',
       fontSize: '16px',
       lineHeight: '24px',
     },

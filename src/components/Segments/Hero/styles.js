@@ -37,7 +37,12 @@ export const LinkWrapper = styled.a`
 `;
 
 export const Downbar = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   grid-column: main-start/main-end;
   grid-row: douwnbar-start/douwnbar-end;
   height: 216px;
+  justify-content: center;
+  padding: 32px;
 `;
