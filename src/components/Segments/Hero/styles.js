@@ -17,6 +17,8 @@ export const Title = styled.div`
   display: flex;
   grid-column: main-start/main-end;
   grid-row: title-start/title-end;
+  height: 100%;
+  max-height: 100%;
   padding: 0 28px;
 `;
 
@@ -25,4 +27,17 @@ export const Description = styled.div`
   display: flex;
   grid-column: main-start/main-end;
   grid-row: desc-start/desc-end;
+`;
+
+export const LinkWrapper = styled.a`
+  align-items: center;
+  display: flex;
+  grid-column: main-start/main-end;
+  grid-row: button-start/button-end;
+`;
+
+export const Downbar = styled.div`
+  grid-column: main-start/main-end;
+  grid-row: douwnbar-start/douwnbar-end;
+  height: 216px;
 `;

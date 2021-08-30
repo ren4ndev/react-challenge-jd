@@ -50,4 +50,15 @@ export const fontType = {
       lineMobile: '20px',
     },
   },
+  link: {
+    desk: {
+      as: 'span',
+      fontSize: '16px',
+      lineHeight: '24px',
+    },
+    mobile: {
+      fontMobile: '16px',
+      lineMobile: '24px',
+    },
+  },
 };

@@ -8,7 +8,9 @@ export default function Typography({
   fontColor,
   fontFamily,
   fontWeight,
+  margin,
   textAlign,
+  textDecoration,
   type,
 }) {
   return (
@@ -16,7 +18,9 @@ export default function Typography({
       fontColor={fontColor}
       fontFamily={fontFamily}
       fontWeight={fontWeight}
+      margin={margin}
       textAlign={textAlign}
+      textDecoration={textDecoration}
       {...fontType[type].desk}
       {...fontType[type].mobile}
     >
@@ -26,18 +30,22 @@ export default function Typography({
 }
 
 Typography.propTypes = {
+  children: PropTypes.string,
   fontColor: PropTypes.string,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
-  children: PropTypes.string,
+  margin: PropTypes.string,
   textAlign: PropTypes.string,
+  textDecoration: PropTypes.string,
   type: PropTypes.string.isRequired,
 };
 
 Typography.defaultProps = {
+  children: '',
   fontColor: 'black',
   fontFamily: 'Inter, sans-serif',
   fontWeight: '400',
+  margin: null,
   textAlign: 'left',
-  children: '',
+  textDecoration: null,
 };

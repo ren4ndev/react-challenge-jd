@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from '../../Atoms/Image';
 import {
-  ImageContainer,
+  ImageDesk,
+  ImageMob,
 } from './styles';
 
 export default function ImageSet({
-  src,
+  srcDesk,
+  srcMob,
   alt,
   gradient,
   fit,
@@ -14,14 +16,20 @@ export default function ImageSet({
   position,
 }) {
   return (
-    <ImageContainer gradient={gradient}>
-      <Image src={src} alt={alt} fit={fit} position={position} mix={mix} />
-    </ImageContainer>
+    <>
+      <ImageDesk gradient={gradient}>
+        <Image src={srcDesk} alt={alt} fit={fit} position={position} mix={mix} />
+      </ImageDesk>
+      <ImageMob gradient={gradient}>
+        <Image src={srcMob} alt={alt} fit={fit} position={position} mix={mix} />
+      </ImageMob>
+    </>
   );
 }
 
 ImageSet.propTypes = {
-  src: PropTypes.string.isRequired,
+  srcDesk: PropTypes.string,
+  srcMob: PropTypes.string,
   alt: PropTypes.string.isRequired,
   gradient: PropTypes.string,
   fit: PropTypes.string,
@@ -30,6 +38,8 @@ ImageSet.propTypes = {
 };
 
 ImageSet.defaultProps = {
+  srcDesk: '',
+  srcMob: '',
   gradient: null,
   fit: 'cover',
   mix: null,

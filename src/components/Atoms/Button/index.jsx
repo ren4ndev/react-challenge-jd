@@ -6,7 +6,7 @@ import {
   ButtonComponent,
 } from './styles';
 
-export default function ButtonBase({
+export default function Button({
   borderRadius,
   boxShadow,
   children,
@@ -33,7 +33,7 @@ export default function ButtonBase({
   );
 }
 
-ButtonBase.propTypes = {
+Button.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
@@ -45,7 +45,7 @@ ButtonBase.propTypes = {
   width: PropTypes.string,
 };
 
-ButtonBase.defaultProps = {
+Button.defaultProps = {
   borderRadius: null,
   boxShadow: null,
   height: null,
