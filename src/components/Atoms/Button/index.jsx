@@ -7,19 +7,23 @@ import {
 } from './styles';
 
 export default function Button({
+  backgroundColor,
   borderRadius,
   boxShadow,
   children,
   height,
   margin,
+  marginDesk,
   width,
 }) {
   return (
     <ButtonComponent
+      backgroundColor={backgroundColor}
       borderRadius={borderRadius}
       boxShadow={boxShadow}
       height={height}
       margin={margin}
+      marginDesk={marginDesk}
       width={width}
     >
       <Typography
@@ -38,17 +42,21 @@ Button.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
+  backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   boxShadow: PropTypes.string,
   height: PropTypes.string,
   margin: PropTypes.string,
+  marginDesk: PropTypes.string,
   width: PropTypes.string,
 };
 
 Button.defaultProps = {
+  backgroundColor: null,
   borderRadius: null,
   boxShadow: null,
   height: null,
   margin: null,
+  marginDesk: null,
   width: null,
 };
