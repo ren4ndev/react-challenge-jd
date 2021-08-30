@@ -4,6 +4,7 @@ import Image from '../../Atoms/Image';
 import {
   ImageDesk,
   ImageMob,
+  ImageFull,
 } from './styles';
 
 export default function ImageSet({
@@ -17,12 +18,20 @@ export default function ImageSet({
 }) {
   return (
     <>
-      <ImageDesk gradient={gradient}>
-        <Image src={srcDesk} alt={alt} fit={fit} position={position} mix={mix} />
-      </ImageDesk>
-      <ImageMob gradient={gradient}>
-        <Image src={srcMob} alt={alt} fit={fit} position={position} mix={mix} />
-      </ImageMob>
+      {srcMob ? (
+        <>
+          <ImageDesk gradient={gradient}>
+            <Image src={srcDesk} alt={alt} fit={fit} position={position} mix={mix} />
+          </ImageDesk>
+          <ImageMob gradient={gradient}>
+            <Image src={srcMob} alt={alt} fit={fit} position={position} mix={mix} />
+          </ImageMob>
+        </>
+      ) : (
+        <ImageFull gradient={gradient}>
+          <Image src={srcDesk} alt={alt} fit={fit} position={position} mix={mix} />
+        </ImageFull>
+      )}
     </>
   );
 }

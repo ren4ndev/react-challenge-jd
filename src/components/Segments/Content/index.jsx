@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ContainedImage from './ContainedImage';
+import Contained from './Contained';
 
 export default function Content({
   type,
@@ -8,15 +8,17 @@ export default function Content({
   imageSrcMob,
   title,
   desc,
+  link,
 }) {
   switch (type) {
-    case 'containedImage':
+    case 'contained':
       return (
-        <ContainedImage
+        <Contained
           imageSrcDesk={imageSrcDesk}
           imageSrcMob={imageSrcMob}
           title={title}
           desc={desc}
+          link={link}
         />
       );
     default:
@@ -30,6 +32,7 @@ Content.propTypes = {
   imageSrcMob: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string,
+  link: PropTypes.objectOf,
 };
 
 Content.defaultProps = {
@@ -37,4 +40,5 @@ Content.defaultProps = {
   imageSrcMob: null,
   title: null,
   desc: null,
+  link: null,
 };

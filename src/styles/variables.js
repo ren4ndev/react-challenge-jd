@@ -15,6 +15,7 @@ export const colors = {
   white: '#FFFFFF',
   black: '#000000',
   background: '#FAF9F7',
+  divider: '#DFDFDF',
 };
 
 export const fontType = {

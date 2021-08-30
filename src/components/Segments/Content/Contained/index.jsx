@@ -8,14 +8,16 @@ import {
   Content,
   Title,
   Desc,
+  LinkWrapper,
 } from './styles';
 import { colors } from '../../../../styles/variables';
 
-export default function ContainedImage({
+export default function Contained({
   imageSrcDesk,
   imageSrcMob,
   title,
   desc,
+  link,
 }) {
   return (
     <>
@@ -42,22 +44,33 @@ export default function ContainedImage({
               {desc}
             </Typography>
           </Desc>
+          <LinkWrapper href={link.href}>
+            <Typography
+              type="link"
+              fontColor={colors.secondary}
+              fontWeight="500"
+            >
+              {link.text}
+            </Typography>
+          </LinkWrapper>
         </Content>
       </ContainedGrid>
     </>
   );
 }
 
-ContainedImage.propTypes = {
+Contained.propTypes = {
   imageSrcDesk: PropTypes.string,
   imageSrcMob: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string,
+  link: PropTypes.objectOf,
 };
 
-ContainedImage.defaultProps = {
+Contained.defaultProps = {
   imageSrcDesk: null,
   imageSrcMob: null,
   title: null,
   desc: null,
+  link: null,
 };

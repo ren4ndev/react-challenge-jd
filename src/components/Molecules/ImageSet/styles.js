@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import { queries } from '../../../styles/variables';
 
+export const ImageFull = styled.div`
+  background-image: ${({ gradient }) => gradient};
+  display: block;
+  grid-column: full-start/full-end;
+  grid-row: image-start/image-end;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+`;
+
 export const ImageDesk = styled.div`
   background-image: ${({ gradient }) => gradient};
   display: none;
