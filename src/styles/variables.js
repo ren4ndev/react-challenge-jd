@@ -11,9 +11,10 @@ export const queries = {
 export const colors = {
   primary: '#00A870',
   secondary: '#5E20A4',
-  gray: '#3D3D3D',
+  grey: '#3D3D3D',
   white: '#FFFFFF',
   black: '#000000',
+  background: '#FAF9F7',
 };
 
 export const fontType = {
@@ -25,6 +26,17 @@ export const fontType = {
     },
     mobile: {
       fontMobile: '28px',
+      lineMobile: '32px',
+    },
+  },
+  heading3: {
+    desk: {
+      as: 'h3',
+      fontSize: '22px',
+      lineHeight: '32px',
+    },
+    mobile: {
+      fontMobile: '22px',
       lineMobile: '32px',
     },
   },

@@ -6,7 +6,6 @@ export const Grid = styled.div`
   column-gap: 16px;
   grid-template-columns: [full-start] 0px [main-start] repeat(4, 1fr) [main-end] 0px [full-end];
   grid-template-rows: auto;
-  height: 500px;
   width: 100%;
 
   @media screen and (min-width: ${queries.s}) {
