@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Typo } from './styles';
 import { fontType } from '../../../styles/variables';
+import renderHtml from '../../../utils/html/renderHtml';
 
 export default function Typography({
   children,
@@ -23,9 +24,8 @@ export default function Typography({
       textDecoration={textDecoration}
       {...fontType[type].desk}
       {...fontType[type].mobile}
-    >
-      {children}
-    </Typo>
+      dangerouslySetInnerHTML={renderHtml(children)}
+    />
   );
 }
 

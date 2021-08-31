@@ -9,6 +9,7 @@ export default function Content({
   title,
   desc,
   link,
+  contentPosition,
 }) {
   switch (type) {
     case 'contained':
@@ -19,6 +20,7 @@ export default function Content({
           title={title}
           desc={desc}
           link={link}
+          contentPosition={contentPosition}
         />
       );
     default:
@@ -33,6 +35,7 @@ Content.propTypes = {
   title: PropTypes.string,
   desc: PropTypes.string,
   link: PropTypes.objectOf,
+  contentPosition: PropTypes.string,
 };
 
 Content.defaultProps = {
@@ -41,4 +44,5 @@ Content.defaultProps = {
   title: null,
   desc: null,
   link: null,
+  contentPosition: null,
 };

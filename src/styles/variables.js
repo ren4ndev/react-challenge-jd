@@ -33,7 +33,7 @@ export const fontType = {
   heading3: {
     desk: {
       as: 'h3',
-      fontSize: '22px',
+      fontSize: '28px',
       lineHeight: '32px',
     },
     mobile: {
@@ -55,8 +55,8 @@ export const fontType = {
   body: {
     desk: {
       as: 'p',
-      fontSize: '18px',
-      lineHeight: '24px',
+      fontSize: '16px',
+      lineHeight: '28px',
     },
     mobile: {
       fontMobile: '16px',

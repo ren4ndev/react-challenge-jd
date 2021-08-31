@@ -18,14 +18,15 @@ export default function Contained({
   title,
   desc,
   link,
+  contentPosition,
 }) {
   return (
     <>
       <ContainedGrid>
-        <Image>
+        <Image contentPosition={contentPosition}>
           <ImageSet srcDesk={imageSrcDesk} srcMob={imageSrcMob} fit="contain" alt="" width="100%" />
         </Image>
-        <Content>
+        <Content contentPosition={contentPosition}>
           <Title>
             <Typography
               type="heading3"
@@ -39,7 +40,7 @@ export default function Contained({
             <Typography
               type="body"
               fontColor={colors.grey}
-              fontWeight="400"
+              fontWeight="500"
             >
               {desc}
             </Typography>
@@ -65,6 +66,7 @@ Contained.propTypes = {
   title: PropTypes.string,
   desc: PropTypes.string,
   link: PropTypes.objectOf,
+  contentPosition: PropTypes.string,
 };
 
 Contained.defaultProps = {
@@ -73,4 +75,5 @@ Contained.defaultProps = {
   title: null,
   desc: null,
   link: null,
+  contentPosition: 'left',
 };
