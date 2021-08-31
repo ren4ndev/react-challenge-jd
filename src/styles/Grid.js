@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { queries } from './variables';
 
 export const Grid = styled.div`
-  display: grid;
   column-gap: 16px;
+  display: grid;
   grid-template-columns: [full-start] 0px [main-start] repeat(4, 1fr) [main-end] 0px [full-end];
   grid-template-rows: auto;
   width: 100%;

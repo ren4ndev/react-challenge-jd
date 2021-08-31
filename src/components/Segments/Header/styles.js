@@ -6,9 +6,9 @@ export const HeaderContainer = styled.header`
   display: flex;
   grid-column: main/main;
   grid-row: header-start/header-end;
-  padding-left: 4px;
   height: 100%;
   justify-content: space-between;
+  padding-left: 4px;
   width: 100%
 `;
 

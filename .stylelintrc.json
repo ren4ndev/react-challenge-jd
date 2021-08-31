@@ -14,9 +14,7 @@
     "sh-waqar/declaration-use-variable": [
       [
         "background",
-        "color",
-        "z-index",
-        "font-size"
+        "color"
       ]
     ],
     "declaration-no-important": true,

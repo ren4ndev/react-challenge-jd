@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Contained from './Contained';
+import Form from './Form';
 
 export default function Content({
   type,
@@ -21,6 +22,13 @@ export default function Content({
           desc={desc}
           link={link}
           contentPosition={contentPosition}
+        />
+      );
+    case 'form':
+      return (
+        <Form
+          title={title}
+          desc={desc}
         />
       );
     default:

@@ -23,6 +23,11 @@ const content = [
       href: '',
     },
   },
+  { // second
+    type: 'form',
+    title: 'Are you a parent without a nanny and looking to share?',
+    desc: 'Leave us your name and email and we’ll update you as soon as a share becomes available in your area!',
+  },
   { // third
     type: 'contained',
     contentPosition: 'right',
