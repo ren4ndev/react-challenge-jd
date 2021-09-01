@@ -64,7 +64,7 @@ export default function HomeContent() {
   return (
     <>
       {content.map((section, index) => {
-        if (index !== content.length) {
+        if (index !== content.length - 1) {
           return (
             <>
               <Section>

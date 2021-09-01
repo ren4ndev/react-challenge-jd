@@ -90,6 +90,7 @@ export const MenuNav = styled.div`
 
 export const NavItem = styled.a`
   margin: 8px 16px;
+  text-decoration: none;
   width: fit-content;
 `;
 
