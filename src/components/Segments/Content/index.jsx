@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Contained from './Contained';
 import ContainedImage from './ContainedImage';
+import WideImage from './WideImage';
 import Form from './Form';
 
 export default function Content({
@@ -31,6 +32,15 @@ export default function Content({
           imageSrcDesk={imageSrcDesk}
           title={title}
           desc={desc}
+        />
+      );
+    case 'wideimage':
+      return (
+        <WideImage
+          imageSrcDesk={imageSrcDesk}
+          title={title}
+          desc={desc}
+          link={link}
         />
       );
     case 'form':
