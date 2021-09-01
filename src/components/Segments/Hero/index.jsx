@@ -104,11 +104,11 @@ export default function Hero() {
         </HeroContent>
 
         <ContentImage>
-          <Image src={heroAppDemo} width="100%" />
+          <Image src={heroAppDemo} alt="" width="100%" />
         </ContentImage>
 
         <Downbar>
-          <Image src={avatar} height="56px" width="56px" />
+          <Image src={avatar} alt="" height="56px" width="56px" />
           <LinkText
             fontColor={colors.secondary}
             margin="0"

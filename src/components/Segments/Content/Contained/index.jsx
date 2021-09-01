@@ -65,7 +65,7 @@ Contained.propTypes = {
   imageSrcMob: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string,
-  link: PropTypes.objectOf,
+  link: PropTypes.objectOf(PropTypes.string),
   contentPosition: PropTypes.string,
 };
 

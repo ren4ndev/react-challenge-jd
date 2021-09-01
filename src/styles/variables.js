@@ -16,6 +16,7 @@ export const colors = {
   black: '#000000',
   background: '#FAF9F7',
   divider: '#DFDFDF',
+  error: '#F44336',
 };
 
 export const fontType = {
@@ -61,6 +62,17 @@ export const fontType = {
     mobile: {
       fontMobile: '16px',
       lineMobile: '28px',
+    },
+  },
+  popup: {
+    desk: {
+      as: 'p',
+      fontSize: '16px',
+      lineHeight: '24px',
+    },
+    mobile: {
+      fontMobile: '12px',
+      lineMobile: '16px',
     },
   },
   button: {
