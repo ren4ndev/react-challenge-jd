@@ -2,7 +2,7 @@
 
 ### Description
 
-The purpose of this challenge is to give a general idea of how React works and how you can use it to create simple reactive applications. This is a simplified version of Hapu’s ‘Become a Nanny Share Host’ view.
+The purpose of this challenge is to give a general idea of how React works and how you can use it to create simple reactive applications. This is a simplified version of [Hapu’s ‘Become a Nanny Share Host’ view](https://www.hapu.com.au/become-nanny-share-host).
 
 ### Technologies
 
