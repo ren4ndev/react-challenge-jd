@@ -64,6 +64,17 @@ export const fontType = {
       lineMobile: '28px',
     },
   },
+  bodySmall: {
+    desk: {
+      as: 'p',
+      fontSize: '12px',
+      lineHeight: '16px',
+    },
+    mobile: {
+      fontMobile: '12px',
+      lineMobile: '16px',
+    },
+  },
   popup: {
     desk: {
       as: 'p',
