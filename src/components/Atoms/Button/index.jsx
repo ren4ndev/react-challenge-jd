@@ -15,6 +15,7 @@ export default function Button({
   margin,
   marginDesk,
   width,
+  widthMobile,
 }) {
   return (
     <ButtonComponent
@@ -25,6 +26,7 @@ export default function Button({
       margin={margin}
       marginDesk={marginDesk}
       width={width}
+      widthMobile={widthMobile}
     >
       <Typography
         type="button"
@@ -50,6 +52,7 @@ Button.propTypes = {
   margin: PropTypes.string,
   marginDesk: PropTypes.string,
   width: PropTypes.string,
+  widthMobile: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -60,4 +63,5 @@ Button.defaultProps = {
   margin: null,
   marginDesk: null,
   width: null,
+  widthMobile: null,
 };

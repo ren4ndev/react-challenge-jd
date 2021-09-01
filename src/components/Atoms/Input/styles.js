@@ -8,7 +8,7 @@ export const StyledInput = styled.input`
   font-size: 14px;
   height: 48px;
   line-height: 20px;
-  margin: 5px 0;
+  margin: 5px 6px;
   padding: 14px 20px;
   width: 328px;
 `;

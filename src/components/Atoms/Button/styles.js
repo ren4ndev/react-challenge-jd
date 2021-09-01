@@ -9,9 +9,10 @@ export const ButtonComponent = styled.button`
   height: ${({ height }) => height || '44px'};
   margin: ${({ margin }) => margin || 0};
   max-width: 100%;
-  width: ${({ width }) => width || '234px'};
+  width: ${({ width, widthMobile }) => widthMobile || width || '234px'};
 
   @media screen and (min-width: ${queries.l}) {
     margin: ${({ marginDesk, margin }) => marginDesk || margin};
+    width: ${({ width }) => width || '234px'};
   }
 `;

@@ -88,7 +88,7 @@ export default function Form({
         <FormNews onSubmit={(e) => handleSubmit(e)}>
           <Input type="text" placeholder="Your name" value={name} onChange={(e) => handleNameChange(e)} />
           <Input type="text" placeholder="Your email" value={email} onChange={(e) => handleEmailChange(e)} />
-          <Button width="328px" type="sumbit" margin="13px 0 0">Send</Button>
+          <Button widthMobile="328px" width="96px" type="sumbit" margin="13px 0 0">Send</Button>
         </FormNews>
         {loading ? (
           <Loader />

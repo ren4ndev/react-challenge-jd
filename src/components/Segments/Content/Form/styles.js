@@ -12,20 +12,6 @@ export const Content = styled.div`
   grid-column: main-start/main-end;
   grid-row: 1/2;
   text-align: center;
-
-  @media screen and (min-width: ${queries.m}) {
-    grid-column: ${({ contentPosition }) => (contentPosition === 'left' ? '2/8' : '8/14')};
-    grid-row: 1/2;
-    text-align: left;
-  }
-
-  @media screen and (min-width: ${queries.l}) {
-    grid-column: ${({ contentPosition }) => (contentPosition === 'left' ? '2/7' : '9/14')};
-  }
-
-  @media screen and (min-width: ${queries.xxl}) {
-    grid-column: ${({ contentPosition }) => (contentPosition === 'left' ? '3/7' : '9/13')};
-  }
 `;
 
 export const Title = styled.div`
@@ -43,6 +29,15 @@ export const FormNews = styled.form`
   grid-column: main-start/main-end;
   grid-row: 2/3;
   justify-content: space-between;
+
+  @media screen and (min-width: ${queries.l}) {
+    flex-direction: row;
+    justify-content: center;
+
+    > button {
+      margin: 5px 6px;
+    }
+  }
 `;
 
 export const Loader = styled.div`
