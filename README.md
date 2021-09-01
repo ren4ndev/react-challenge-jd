@@ -56,15 +56,21 @@ The purpose of this challenge is to give a general idea of how React works and h
 └── ...
 ```
 
+### The layout (Desktop)
+
+![image](./landing-page-desktop.png)
+
+### The layout (Mobile)
+
+![image](./landing-page-mobile.png)
+
 ### Getting started
 
 - To install the dependencies:
 
 ```sh
 npm install
-```
 or
-```sh
 yarn install
 ```
 
@@ -72,9 +78,7 @@ yarn install
 
 ```sh
 npm run start
-```
 or
-```sh
 yarn start
 ```
 
@@ -82,9 +86,7 @@ To build the app:
 
 ```sh
 npm run build
-```
 or
-```sh
 yarn build
 ```
 
@@ -92,8 +94,6 @@ yarn build
 
 ```sh
 npm run lint
-```
 or
-```sh
 yarn lint
 ```
