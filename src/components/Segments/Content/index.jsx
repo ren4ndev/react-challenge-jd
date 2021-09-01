@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Contained from './Contained';
+import ContainedImage from './ContainedImage';
 import Form from './Form';
 
 export default function Content({
@@ -22,6 +23,14 @@ export default function Content({
           desc={desc}
           link={link}
           contentPosition={contentPosition}
+        />
+      );
+    case 'containedimage':
+      return (
+        <ContainedImage
+          imageSrcDesk={imageSrcDesk}
+          title={title}
+          desc={desc}
         />
       );
     case 'form':

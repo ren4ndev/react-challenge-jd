@@ -5,8 +5,8 @@ export const PopupContainer = styled.div`
   background-color: ${colors.white};
   border: 1px solid ${colors.divider};
   border-radius: 4px;
-  box-shadow: 7px 6px 24px -9px ${colors.grey};
   bottom: 20px;
+  box-shadow: 7px 6px 24px -9px ${colors.grey};
   display: ${({ show }) => (show ? 'flex' : 'none')};
   height: 48px;
   justify-content: center;

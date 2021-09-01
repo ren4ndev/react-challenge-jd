@@ -44,8 +44,8 @@ export const Loader = styled.div`
   align-self: center;
   animation: spin 0.3s linear infinite;
   border: 8px solid ${colors.divider};
-  border-top: 8px solid ${colors.primary};
   border-radius: 50%;
+  border-top: 8px solid ${colors.primary};
   grid-column: main-start/main-end;
   grid-row: 1/3;
   height: 60px;
